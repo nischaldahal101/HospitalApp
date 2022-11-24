@@ -1,10 +1,10 @@
-# fyp
+# FYP
 
-A new Flutter project.
+A new Flutter project for FInal Year.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a for a mobile application made using Flutter and ExpressJS.
 
 A few resources to get you started if this is your first Flutter project:
 
