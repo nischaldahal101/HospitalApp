@@ -1,0 +1,89 @@
+.categories-main-container {
+  .categories-main {
+    padding-left: 13.65em;
+    .categories-main-header {
+      padding: 1.5em 1em;
+      color: #fff;
+      background-color: hsl(216, 86%, 45%);
+      box-shadow: 0 2px 5px #f2f2f2cb;
+      margin-bottom: 0.75em;
+      h2 {
+        padding-left: 0.75em;
+      }
+    }
+    .go-back-link {
+      text-decoration: none;
+      padding: 1em;
+      color: #105ed4;
+    }
+    .categories-table-container {
+      padding: 1em;
+      .categories-table-headers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1em;
+        h3 {
+          color: #105ed4;
+          font-size: 1.75em;
+        }
+        small {
+          color: #105ed4;
+          font-size: 0.9em;
+        }
+      }
+      .single-category-main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1.25em;
+        padding-top: 1em;
+        justify-content: center;
+        align-items: center;
+        max-width: 80em;
+        margin: 0 auto;
+        .spinner-container {
+          width: 100vw;
+          max-width: 68em;
+        }
+
+        .single-category-container {
+          background-color: #fff;
+          box-shadow: 2px 5px 5px #e4dfdfcb;
+          transition: 0.3s all ease-in-out;
+
+          .category {
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            align-items: center;
+            .category-img-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              padding-top: 2em;
+              padding-bottom: 1em;
+              .category-img {
+                width: 80px;
+                height: 80px;
+              }
+            }
+            .category-details {
+              color: #105ed4;
+              display: flex;
+              flex-direction: column;
+              gap: 0.25em;
+              p {
+                text-align: center;
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+        .single-category-container:hover {
+          box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+        }
+      }
+    }
+  }
+}

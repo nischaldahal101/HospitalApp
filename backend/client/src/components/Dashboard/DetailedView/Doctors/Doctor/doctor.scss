@@ -1,0 +1,372 @@
+.single-doctor-containers {
+  .single-doctor-main-container {
+    padding-left: 13.65em;
+    .single-doctor-header {
+      background-color: #105ed4;
+      box-shadow: 0 2px 5px #f2f2f2cb;
+      color: #fff;
+      padding: 1.5em 1em;
+      margin-bottom: 0.75em;
+      h2 {
+        padding-left: 0.75em;
+      }
+    }
+    .single-doctor-details {
+      display: grid;
+      grid-template-columns: 0.225fr 1fr;
+      gap: 1.5em;
+      padding: 1.25em;
+      background-color: #fff;
+      box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+      border-radius: 5px;
+      margin: 0 1em;
+      margin-bottom: 1.15em;
+      .doctor-img {
+        width: 100%;
+      }
+      .single-doctor-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        h2 {
+          color: #105ed4;
+          font-size: 1.75em;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          gap: 0.25em;
+          font-size: 0.9em;
+          color: #105ed4;
+          .doctor-icon {
+            font-size: 1.15em;
+          }
+        }
+        .available-time {
+          strong {
+            color: #105ed4;
+            font-size: 1.15em;
+            text-decoration: underline;
+          }
+          .available {
+            padding: 1em;
+            padding-top: 0.5em;
+            h4 {
+              padding-top: 0.25em;
+              color: #105ed4;
+            }
+            small {
+              color: red;
+              cursor: pointer;
+            }
+            .time-table {
+              width: 100%;
+              max-width: 40em;
+              margin-top: 0.5em;
+
+              .thead {
+                display: flex;
+                justify-content: space-evenly;
+                border: 1px solid #105ed4;
+                div {
+                  color: #105ed4;
+                  padding: 0.25em;
+                }
+              }
+              .tbody-container {
+                border: 1px solid #105ed4;
+                border-bottom: none;
+                border-top: none;
+                margin-bottom: 0.5em;
+                .tbody {
+                  display: flex;
+                  width: 100%;
+                  justify-content: space-evenly;
+                  border-bottom: 1px solid #105ed4;
+                  div {
+                    color: #105ed4;
+                    padding: 0.25em;
+                  }
+                }
+              }
+            }
+            .add-time-form {
+              h5 {
+                color: #105ed4;
+                text-decoration: underline;
+                padding-bottom: 0.25em;
+              }
+              .form-flex {
+                display: flex;
+                gap: 1em;
+                width: 100%;
+                .form-control {
+                  display: flex;
+                  align-items: center;
+                  gap: 0.5em;
+                  padding-top: 0.25em;
+                  label {
+                    color: #105ed4;
+                    font-size: 1.05em;
+                    letter-spacing: 1px;
+                  }
+                  input {
+                    padding: 0.5em;
+                    outline: none;
+                    border: none;
+                    font-family: 'Poppins', sans-serif;
+                    background-color: #f2f2f2;
+                    max-width: 8em;
+                  }
+                }
+                .add-time-btn {
+                  padding: 0.5em 0.75em;
+                  font-family: 'Poppins', sans-serif;
+                  letter-spacing: 1px;
+                  color: #fff;
+                  border: none;
+                  background-color: #105ed4;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+        .booked-time {
+          margin-top: 1em;
+          .booked-container {
+            padding-top: 0.25em;
+            .single-book {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 1em;
+
+              .booked-single {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25em;
+                border: 1px solid #105ed4;
+                padding: 0.75em;
+                .dlt-booked {
+                  margin-top: 0.35em;
+                  color: #fff;
+                  background-color: #ff0000cb;
+                  outline: none;
+                  font-family: 'Poppins', sans-serif;
+                  padding: 0.5em 1em;
+                  border: none;
+                  letter-spacing: 1px;
+                  cursor: pointer;
+                  transition: 0.3s all ease-in-out;
+                  max-width: 18em;
+                }
+              }
+            }
+          }
+        }
+        .doctor-btn-container {
+          display: flex;
+          gap: 0.5em;
+          padding: 0.5em 0;
+          .edit-doctor {
+            color: #fff;
+            background-color: #105ed4;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.75em 1em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+          }
+          .edit-doctor:hover {
+            color: #105ed4;
+            background-color: #fff;
+            outline: 1.5px solid #105ed4;
+          }
+          .delete-doctor {
+            color: #fff;
+            background-color: #ff0000cb;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.75em 1em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+          }
+          .delete-doctor:hover {
+            color: #ff0000cb;
+            background-color: #fff;
+            outline: 1px solid #ff0000cb;
+          }
+        }
+      }
+    }
+    .show-form {
+      .doctor-details-form {
+        background-color: #fff;
+        margin: 1em;
+        padding: 1em;
+        h2 {
+          color: #105ed4;
+        }
+        .form-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-top: 0.75em;
+          padding-bottom: 0.75em;
+          .form-input {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25em;
+            padding-bottom: 1em;
+            label {
+              color: #105ed4;
+              font-weight: bold;
+            }
+            input {
+              max-width: 25em;
+              padding: 1em;
+              background-color: #f2f2f2;
+              outline: none;
+              border: none;
+              font-family: 'Poppins', sans-serif;
+            }
+            input:focus {
+              outline: 2px solid #105ed4;
+            }
+            textarea {
+              font-family: 'Poppins', sans-serif;
+              background: #f2f2f2;
+              outline: none;
+              border: none;
+              padding: 1em;
+              height: 10em;
+            }
+            textarea:focus {
+              outline: 2px solid #105ed4;
+            }
+          }
+        }
+        .form-btn-container {
+          display: flex;
+          gap: 0.75em;
+          align-items: center;
+
+          .submit-btn {
+            color: #fff;
+            background-color: #105ed4;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.75em 1em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+          }
+          .submit-btn:hover {
+            color: #105ed4;
+            background-color: #fff;
+            outline: 1.5px solid #105ed4;
+          }
+          .cancel-btn {
+            color: #fff;
+            background-color: #ff0000cb;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.75em 1em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+          }
+          .cancel-btn:hover {
+            color: #ff0000cb;
+            background-color: #fff;
+            outline: 1px solid #ff0000cb;
+          }
+        }
+        .form-flex {
+          padding-top: 0.75em;
+          padding-bottom: 0.75em;
+          .form-left {
+            display: flex;
+            width: 100%;
+            gap: 0.75em;
+            .form-input {
+              display: flex;
+              flex-direction: column;
+              gap: 0.25em;
+              padding-bottom: 1em;
+              width: 100%;
+              label {
+                color: #105ed4;
+                font-weight: bold;
+              }
+              input {
+                padding: 1em;
+                background-color: #f2f2f2;
+                outline: none;
+                border: none;
+                font-family: 'Poppins', sans-serif;
+              }
+              input:focus {
+                outline: 2px solid #105ed4;
+              }
+              textarea {
+                font-family: 'Poppins', sans-serif;
+                background: #f2f2f2;
+                outline: none;
+                border: none;
+                padding: 1em;
+                height: 10em;
+              }
+              textarea:focus {
+                outline: 2px solid #105ed4;
+              }
+            }
+          }
+          .form-btn-container {
+            display: flex;
+            gap: 0.75em;
+            align-items: center;
+
+            .submit-btn {
+              color: #fff;
+              background-color: #105ed4;
+              outline: none;
+              font-family: 'Poppins', sans-serif;
+              padding: 0.75em 1em;
+              border: none;
+              letter-spacing: 1px;
+              cursor: pointer;
+              transition: 0.3s all ease-in-out;
+            }
+            .submit-btn:hover {
+              color: #105ed4;
+              background-color: #fff;
+              outline: 1.5px solid #105ed4;
+            }
+            .cancel-btn {
+              color: #fff;
+              background-color: #ff0000cb;
+              outline: none;
+              font-family: 'Poppins', sans-serif;
+              padding: 0.75em 1em;
+              border: none;
+              letter-spacing: 1px;
+              cursor: pointer;
+              transition: 0.3s all ease-in-out;
+            }
+            .cancel-btn:hover {
+              color: #ff0000cb;
+              background-color: #fff;
+              outline: 1px solid #ff0000cb;
+            }
+          }
+        }
+      }
+    }
+  }
+}

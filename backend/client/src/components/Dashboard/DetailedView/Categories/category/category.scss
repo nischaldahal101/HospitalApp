@@ -1,0 +1,261 @@
+.single-category-containers {
+  .single-category-main-container {
+    padding-left: 13.65em;
+    .single-category-header {
+      background-color: #105ed4;
+      box-shadow: 0 2px 5px #f2f2f2cb;
+      color: #fff;
+      padding: 1.5em 1em;
+      margin-bottom: 0.75em;
+      h2 {
+        padding-left: 0.75em;
+      }
+    }
+    .single-category-details {
+      display: grid;
+      grid-template-columns: 0.225fr 1fr;
+      gap: 1em;
+      padding: 1.25em;
+      background-color: #fff;
+      box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+      border-radius: 5px;
+      margin: 0 1em;
+      margin-bottom: 1em;
+      .category-icon {
+        width: 60%;
+        padding-top: 1.5em;
+        padding-left: 2em;
+      }
+      .single-category-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        h2 {
+          color: #105ed4;
+          font-size: 1.75em;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          gap: 0.25em;
+          font-size: 0.9em;
+          color: #105ed4;
+          .category-icon {
+            font-size: 1.15em;
+          }
+        }
+        .diseases-container {
+          strong {
+            color: #105ed4;
+          }
+          .disease {
+            display: grid;
+            grid-template-columns: 0.2fr 1fr;
+            gap: 0.75em;
+            padding: 0.75em;
+            border: 1.5px solid #105ed4;
+            margin-top: 0.5em;
+            .disease-actions {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              strong {
+                font-size: 0.9em;
+              }
+              .delete-disease {
+                color: #ff0000cb;
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-family: 'Poppins', sans-serif;
+              }
+              .delete-disease:hover {
+                text-decoration: underline;
+              }
+            }
+
+            p {
+              font-size: 0.8em;
+              background-color: #105ed4;
+              color: #fff;
+              padding: 0.75em;
+            }
+          }
+        }
+        .available-doctors-container {
+          strong {
+            color: #105ed4;
+          }
+          .available-doctors {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.25em 1em;
+            p {
+              display: flex;
+              gap: 0.25em;
+              align-items: center;
+            }
+            .dlt-doctor {
+              color: #ff0000cb;
+              border: none;
+              background: none;
+              cursor: pointer;
+            }
+          }
+        }
+        .category-btn-container {
+          display: flex;
+          gap: 0.5em;
+          padding: 0.5em 0;
+          .edit-category {
+            color: #fff;
+            background-color: #105ed4;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.5em 0.75em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            display: flex;
+            gap: 0.25em;
+            align-items: center;
+          }
+          .edit-category:hover {
+            color: #105ed4;
+            background-color: #fff;
+            outline: 1.5px solid #105ed4;
+          }
+          .delete-category {
+            color: #fff;
+            background-color: #ff0000cb;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.5em 0.75em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            display: flex;
+            gap: 0.25em;
+            align-items: center;
+          }
+          .delete-category:hover {
+            color: #ff0000cb;
+            background-color: #fff;
+            outline: 1px solid #ff0000cb;
+          }
+          .add-disease {
+            color: #fff;
+            background-color: #105ed4;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.5em 0.75em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+            display: flex;
+            gap: 0.25em;
+            align-items: center;
+          }
+          .add-disease:hover {
+            color: #105ed4;
+            background-color: #fff;
+            outline: 1px solid #105ed4;
+          }
+        }
+      }
+    }
+    .show-form {
+      .category-details-form {
+        background-color: #fff;
+        box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+        border-radius: 5px;
+        margin: 1em;
+        padding: 1em;
+        h2 {
+          color: #105ed4;
+        }
+        .form-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-top: 0.75em;
+          padding-bottom: 0.75em;
+          .form-input {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25em;
+            padding-bottom: 1em;
+            label {
+              color: #105ed4;
+              font-weight: bold;
+            }
+            input {
+              max-width: 25em;
+              padding: 1em;
+              background-color: #f2f2f2;
+              outline: none;
+              border: none;
+              font-family: 'Poppins', sans-serif;
+            }
+            input:focus {
+              outline: 2px solid #105ed4;
+            }
+            textarea {
+              font-family: 'Poppins', sans-serif;
+              background: #f2f2f2;
+              outline: none;
+              border: none;
+              padding: 1em;
+              height: 10em;
+            }
+            textarea:focus {
+              outline: 2px solid #105ed4;
+            }
+          }
+        }
+        .form-btn-container {
+          display: flex;
+          gap: 0.75em;
+          align-items: center;
+
+          .submit-btn {
+            color: #fff;
+            background-color: #105ed4;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.75em 1em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+          }
+          .submit-btn:hover {
+            color: #105ed4;
+            background-color: #fff;
+            outline: 1.5px solid #105ed4;
+          }
+          .cancel-btn {
+            color: #fff;
+            background-color: #ff0000cb;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+            padding: 0.75em 1em;
+            border: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+          }
+          .cancel-btn:hover {
+            color: #ff0000cb;
+            background-color: #fff;
+            outline: 1px solid #ff0000cb;
+          }
+        }
+      }
+    }
+  }
+}

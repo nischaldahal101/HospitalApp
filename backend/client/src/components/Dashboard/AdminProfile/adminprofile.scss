@@ -1,0 +1,79 @@
+.admin-profile-main {
+  margin-left: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .admin-details {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #fff;
+    padding: 1em;
+    .admin-img-control {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75em;
+      .admin-img-container {
+        position: relative;
+        .admin-img {
+          width: 200px;
+          height: 180px;
+          position: relative;
+        }
+        .show-update-form {
+          background-color: #f2f2f29c;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          padding: 1em;
+          letter-spacing: 1px;
+          position: absolute;
+          max-width: 100px;
+          z-index: 1;
+        }
+      }
+      .upload-admin-form {
+        display: flex;
+        align-items: center;
+        gap: 0.75em;
+        input {
+          padding: 1em 0.75em;
+          padding-left: 1em;
+          border: none;
+          outline: none;
+          background-color: #f2f2f2;
+          font-family: Poppins;
+          margin-top: 0.5em;
+        }
+        .upload-admin-img {
+          background-color: #2138e9;
+          color: #fff;
+          padding: 1em;
+          max-width: 13em;
+          font-family: Poppins;
+          font-weight: bold;
+          letter-spacing: 1px;
+          outline: none;
+          transition: 0.3s all ease-in-out;
+          cursor: pointer;
+          border: 1.25px solid #0c53e6;
+        }
+      }
+      .cancel-upload {
+        background-color: #ff000098;
+        color: #fff;
+        padding: 1em;
+        max-width: 10em;
+        font-family: Poppins;
+        font-weight: bold;
+        letter-spacing: 1px;
+        outline: none;
+        transition: 0.3s all ease-in-out;
+        cursor: pointer;
+        border: 1.25px solid #ff000098;
+      }
+    }
+  }
+}

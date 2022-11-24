@@ -1,0 +1,97 @@
+.dashboard-actions-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  padding: 1em;
+  padding-top: 0.25em;
+  gap: 1em;
+  .dashboard-actions {
+    padding-top: 0.75em;
+    padding-left: 1em;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px #acaaaa96;
+    max-width: 65em;
+
+    h3 {
+      color: #105ed4;
+      display: flex;
+      align-items: center;
+      gap: 0.25em;
+      justify-content: center;
+      padding: 0.5em;
+      .thunder-icon {
+        font-size: 1.5em;
+      }
+    }
+    .dashboard-btns-container {
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      padding-left: 0;
+
+      .add {
+        display: flex;
+        align-items: center;
+        gap: 0.25em;
+        outline: none;
+        padding: 0.65em 1.25em;
+        font-family: 'Poppins', sans-serif;
+        background-color: #2138e9;
+        color: #fff;
+        border-radius: 5px;
+        border: 2.5px solid #acaaaa96;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: 0.2s all ease-in-out;
+        cursor: pointer;
+        .add-icon {
+          font-size: 1.25em;
+        }
+      }
+      .add:hover {
+        border: 2.5px solid #2138e9;
+        color: #2138e9;
+        background-color: #fff;
+      }
+    }
+  }
+  .moderator-short-desc {
+    background-color: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px #acaaaa96;
+    gap: 0.75em;
+    .moderator-headers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .moderator-img-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        .moderator-pic {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+        .moderator-header {
+          display: flex;
+          flex-direction: column;
+          color: #105ed4;
+        }
+      }
+      .twitter-icon {
+        font-size: 1.5em;
+        color: #105ed4;
+        padding-right: 0.5em;
+      }
+    }
+    p {
+      font-size: 0.9em;
+      padding-top: 0.5em;
+      color: #6c6d70;
+    }
+  }
+}

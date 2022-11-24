@@ -1,0 +1,12 @@
+.form-doctor-container {
+  max-width: 60em;
+  margin-left: 1em;
+  h4 {
+    color: #2138e9;
+    text-decoration: underline;
+  }
+  .display-grid {
+    display: grid;
+    grid-template-columns: 0.65fr 1fr;
+  }
+}

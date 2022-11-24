@@ -1,0 +1,103 @@
+.doctors-container {
+  .doctors-main {
+    padding-left: 13.65em;
+    .doctors-main-header {
+      padding: 1.5em 1em;
+      color: #fff;
+      background-color: hsl(216, 86%, 45%);
+      box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+      margin-bottom: 0.75em;
+      h2 {
+        padding-left: 0.75em;
+      }
+    }
+    .go-back-link {
+      text-decoration: none;
+      padding: 1em;
+      color: #105ed4;
+    }
+    .doctors-table-container {
+      padding: 1em;
+      .doctor-table-headers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1em;
+        h3 {
+          color: #105ed4;
+          font-size: 1.75em;
+        }
+        small {
+          color: #105ed4;
+          font-size: 0.9em;
+        }
+      }
+      .single-doctor-main-container {
+        .spinner-container {
+          width: 100vw;
+          max-width: 68em;
+        }
+        .no-doctors-container {
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+          justify-content: center;
+          align-items: center;
+          .no-doctors-text {
+            color: #105ed4;
+            text-align: center;
+          }
+          img {
+            width: 35%;
+          }
+        }
+        .grid-doctors {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1em;
+          .single-doctor-container {
+            display: flex;
+            flex-direction: column;
+            box-shadow: #00000029 0px 10px 36px 0px, #0000000f 0px 0px 0px 1px;
+
+            .doctor {
+              .doctor-img-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: #51678a44;
+                padding-top: 2em;
+                .doctor-img {
+                  width: 193.141px;
+                  height: 245.938px;
+                }
+              }
+              .doctor-details {
+                background-color: #fff;
+                padding: 0.5em 1em;
+                color: #105ed4;
+                display: flex;
+                flex-direction: column;
+                gap: 0.25em;
+
+                h4 {
+                  font-size: 1.25em;
+                  text-align: center;
+                }
+                p {
+                  font-size: 0.9em;
+                  display: flex;
+                  align-items: center;
+
+                  gap: 0.5em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
